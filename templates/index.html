@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temtem Search</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="page">
+    <h1 class="title">Temtem Search</h1>
+
+    <form id="search-form" class="search-bar">
+      <div class="input-wrapper">
+        <input type="text" id="search-input" placeholder="Type a Temtem name... e.g. Mimit" autocomplete="off" />
+        <ul id="suggestions" class="suggestions"></ul>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="error-msg" class="error"></p>
+
+    <div id="card-container"></div>
+
+    <a href="{{ url_for('battle') }}" class="start-battle-btn">⚔️ Start Battle</a>
+  </div>
+
+  <script src="{{ url_for('static', filename='search.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temtem Fight – Attack Assignment</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="fight-header">
+    <h1>⚔️ Fight Simulation</h1>
+    <p class="subtitle">Attacks have been assigned based on each Temtem's type</p>
+  </header>
+
+  <main class="fight-container">
+    <!-- Team A (Player) -->
+    <section class="team-panel" id="team-a-panel">
+      <h2>Your Team</h2>
+      <div class="team-grid" id="team-a-grid"></div>
+    </section>
+
+    <div class="vs-badge">VS</div>
+
+    <!-- Team B (Opponent) -->
+    <section class="team-panel" id="team-b-panel">
+      <h2>Opponent Team</h2>
+      <div class="team-grid" id="team-b-grid"></div>
+    </section>
+  </main>
+
+  <footer class="fight-footer">
+    <button id="proceed-btn" class="btn-primary" disabled>
+      Proceed to Battle →
+    </button>
+    <a href="{{ url_for('battle') }}" class="btn-secondary">← Back to Selection</a>
+  </footer>
+
+  <!-- Pass temtem.json path to JS -->
+  <script>
+    window.TEMTEM_JSON_URL = "{{ url_for('static', filename='../temtem.json') }}";
+    window.ATTACKS_JSON_URL = "{{ url_for('static', filename='../attacks.json') }}";
+  </script>
+  <script src="{{ url_for('static', filename='fight.js') }}"></script>
+</body>
+</html>

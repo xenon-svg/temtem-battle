@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temtem Battle Setup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="page battle-page">
+
+    <!-- ===== Header ===== -->
+    <h1 class="title">⚔️ Battle Setup</h1>
+    <a href="{{ url_for('index') }}" class="back-link">← Back to Search</a>
+
+    <!-- ===== Select Team Button ===== -->
+    <div id="select-team-section">
+      <button id="select-team-btn" class="primary-btn">Select Team</button>
+    </div>
+
+    <!-- ===== Mode Options (hidden until Select Team is clicked) ===== -->
+    <div id="mode-options" class="mode-options hidden">
+      <button id="random-btn" class="mode-btn">🎲 Random</button>
+      <button id="selection-btn" class="mode-btn">👥 Selection</button>
+    </div>
+
+    <!-- ===== Status / Instruction Banner ===== -->
+    <p id="status-msg" class="status-msg"></p>
+
+    <!-- ===== Teams Display ===== -->
+    <div id="teams-container" class="teams-container hidden">
+      <div class="team-panel" id="player1-panel">
+        <h2 class="team-title">Player 1</h2>
+        <div class="team-slots" id="player1-slots"></div>
+      </div>
+
+      <div class="vs-badge">VS</div>
+
+      <div class="team-panel" id="player2-panel">
+        <h2 class="team-title">Player 2</h2>
+        <div class="team-slots" id="player2-slots"></div>
+      </div>
+    </div>
+
+    <!-- ===== Temtem Picker (shown only in Selection mode) ===== -->
+    <div id="picker-section" class="picker-section hidden">
+      <h3 class="picker-title">Choose a Temtem</h3>
+      <input
+        type="text"
+        id="picker-search"
+        class="picker-search"
+        placeholder="Search Temtem..."
+        autocomplete="off"
+      />
+      <div id="picker-grid" class="picker-grid"></div>
+    </div>
+  
+  <!-- ===== HP Comparison (hidden until teams are ready) ===== -->
+  <div id="hp-compare" class="hp-compare hidden">
+    <h3 class="hp-compare-title">Team HP Comparison</h3>
+
+    <div class="hp-bar-row">
+      <span class="hp-bar-label">Player 1</span>
+      <div class="hp-bar-track">
+        <div id="hp-bar-p1" class="hp-bar-fill p1"></div>
+      </div>
+      <span id="hp-total-p1" class="hp-bar-value">0</span>
+    </div>
+
+    <div class="hp-bar-row">
+      <span class="hp-bar-label">Player 2</span>
+      <div class="hp-bar-track">
+        <div id="hp-bar-p2" class="hp-bar-fill p2"></div>
+      </div>
+      <span id="hp-total-p2" class="hp-bar-value">0</span>
+    </div>
+
+    <p id="hp-advantage" class="hp-advantage"></p>
+  </div>
+
+    <!-- ===== Reset Button ===== -->
+    <button id="reset-btn" class="reset-btn hidden">🔄 Reset Battle</button>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='battle.js') }}"></script>
+</body>
+</html>

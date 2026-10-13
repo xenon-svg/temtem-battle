@@ -1,0 +1,110 @@
+[
+  {
+    "Neutral": {
+      "Cage": 12,
+      "Stampede": 21,
+      "Charge": 33,
+      "NinJutsu": 18,
+      "JawStrike": 15
+    }
+  },
+  {
+    "Wind": {
+      "Turbine": 12,
+      "Hypoxia": 21,
+      "Blizzard": 33,
+      "Tornado": 18,
+      "Gust": 15
+    }
+  },
+  {
+    "Earth": {
+      "Bulldozer": 12,
+      "Quicksand": 21,
+      "Earthquake": 33,
+      "SandStorm": 18,
+      "Rockfall": 15
+    }
+  },
+  {
+    "Water": {
+      "Bubbles": 12,
+      "Flood": 21,
+      "Tsunami": 33,
+      "ColdGeyser": 18,
+      "Waterjet": 15
+    }
+  },
+  {
+    "Fire": {
+      "HeatUp": 12,
+      "Embers": 21,
+      "Hellfire": 33,
+      "FireTornado": 18,
+      "LavaWave": 15
+    }
+  },
+  {
+    "Nature": {
+      "Roots": 12,
+      "Outgrowth": 21,
+      "Photosynthesis": 33,
+      "AllergicSpread": 18,
+      "Leech": 15
+    }
+  },
+  {
+    "Electric": {
+      "Defibrillate": 12,
+      "Electropunch": 21,
+      "Electromagnetism": 33,
+      "AVoltopuncture": 18,
+      "Sparks": 15
+    }
+  },
+  {
+    "Mental": {
+      "PsyWave": 12,
+      "Hypnosis": 21,
+      "Ultrasound": 33,
+      "TransientEcho": 18,
+      "PsySurge": 15
+    }
+  },
+  {
+    "Digital": {
+      "PsyWave": 12,
+      "Overclock": 21,
+      "FaradayCage": 33,
+      "Digithreat": 18,
+      "DigitalWhip": 15
+    }
+  },
+  {
+    "Melee": {
+      "Hook": 12,
+      "Overclock": 21,
+      "Trample": 33,
+      "DoubleGash": 18,
+      "Uppercut": 15
+    }
+  },
+  {
+    "Crystal": {
+      "Sharpening": 12,
+      "QuartzDagger": 21,
+      "Crystallize": 33,
+      "DiamondFort": 18,
+      "GlassBlade": 15
+    }
+  },
+  {
+    "Toxic": {
+      "ToxicGas": 12,
+      "VenomSpread": 21,
+      "Hallucination": 33,
+      "AcidReflux": 18,
+      "Urushiol": 15
+    }
+  }
+]
